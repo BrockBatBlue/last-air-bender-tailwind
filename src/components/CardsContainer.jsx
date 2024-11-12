@@ -1,12 +1,11 @@
 import Card from "./Card";
-import "../styles/CardsContainer.css";
 
 const CardsContainer = ({ characters }) => {
   //map cards to the container element
 
   const placeholder = "https://placedog.net/500";
   return (
-    <div className="cardsContainer">
+    <div className="flex flex-row flex-wrap gap-6 p-6">
       {characters.map((character) => {
         return (
           <Card
